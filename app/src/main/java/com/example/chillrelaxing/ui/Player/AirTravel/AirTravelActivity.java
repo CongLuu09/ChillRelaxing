@@ -66,7 +66,7 @@ public class AirTravelActivity extends AppCompatActivity {
                 AppDatabase db = new AppDatabase(this);
 
                 new Thread(() -> {
-                    // 🔥 Xoá toàn bộ âm thanh đã lưu trước đó cho scene "ocean"
+
                     db.deleteSoundsByScene("air");
 
                     for (LayerSound layer : layers) {
